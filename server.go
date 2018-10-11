@@ -8,6 +8,6 @@ import (
 )
 
 func main() {
-    http.HandleFunc("/", database.Handler)
-    log.Fatal(http.ListenAndServe(":8888", nil))
+	http.HandleFunc("/", database.Handler)
+	log.Fatal(http.ListenAndServe(":8888", nil))
 }

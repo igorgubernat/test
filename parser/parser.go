@@ -6,9 +6,9 @@ import (
 
 func parse(line []string) model.Record {
 	return model.Record{
-		ID: line[0],
-		Name: line[1],
-		Email: line[2],
+		ID:          line[0],
+		Name:        line[1],
+		Email:       line[2],
 		PhoneNumber: line[3],
 	}
 }

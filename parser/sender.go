@@ -1,12 +1,12 @@
 package parser
 
 import (
-	"net/http"
-	"encoding/json"
 	"bytes"
-	"time"
+	"encoding/json"
 	"fmt"
 	"github.com/igorgubernat/test/model"
+	"net/http"
+	"time"
 )
 
 const dbUrl = "http://localhost:8888"

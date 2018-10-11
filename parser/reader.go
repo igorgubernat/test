@@ -1,11 +1,11 @@
-package parser 
+package parser
 
 import (
-	"encoding/csv"
-	"os"
 	"bufio"
+	"encoding/csv"
 	"fmt"
 	"io"
+	"os"
 )
 
 func Read() error {
