@@ -4,9 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/igorgubernat/test/model"
 	"net/http"
 	"time"
+
+	"github.com/igorgubernat/test/model"
 )
 
 const dbUrl = "http://localhost:8888"
@@ -35,6 +36,8 @@ func send(record model.Record) error {
 	if res.StatusCode != http.StatusCreated {
 		return fmt.Errorf("could not create record: database service returned status %d", res.StatusCode)
 	}
+
+	fmt.Printf("status %d\n", res.StatusCode)
 
 	return nil
 }

@@ -3,9 +3,10 @@ package database
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/igorgubernat/test/model"
 	"io/ioutil"
 	"net/http"
+
+    "github.com/igorgubernat/test/model"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {

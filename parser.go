@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/igorgubernat/test/parser"
 	"log"
+
+	"github.com/igorgubernat/test/parser"
 )
 
 func main() {
