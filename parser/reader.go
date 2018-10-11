@@ -34,7 +34,7 @@ func Read() error {
 		record := parse(line)
 		err = send(record)
 		if err != nil {
-			fmt.Printf("error: %v\n", err)
+			fmt.Printf("error sending record: %v\n", err)
 		}
 	}
 
